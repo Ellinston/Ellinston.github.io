@@ -1,0 +1,8 @@
+{
+  "name": "ellinston-growth-archive",
+  "private": true,
+  "scripts": {
+    "check": "node --check app.js && node --check scripts/sync-agent-kit.mjs && node scripts/sync-agent-kit.mjs --source data/portfolio.json --check",
+    "sync": "node scripts/sync-agent-kit.mjs"
+  }
+}

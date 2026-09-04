@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-09-04",
+  "archiveSince": "2026",
+  "profile": {
+    "name": "冯晨曦",
+    "handle": "Ellinston",
+    "status": "公开档案 · 持续更新",
+    "intro": "我是冯晨曦，一名学习自动化与机器人方向的工科学生。这里不记录每日流水账，只在项目形成阶段性成果后，留下时间、判断、结果和可追溯的来源。"
+  },
+  "projects": [
+    {
+      "id": "agent-kit",
+      "title": "Agent Kit 与个人 AI 工作台",
+      "status": "持续迭代",
+      "period": "2026.08 — NOW",
+      "summary": "用 Markdown 维护项目上下文、工作流与 Skills，并完成可读取真实仓库关系和运行记录的本地 Console；它也是这份公开档案的唯一事实源。",
+      "tags": [
+        "AI Agent",
+        "Context",
+        "Workflow",
+        "Node.js"
+      ],
+      "links": [
+        {
+          "label": "公开档案历史",
+          "url": "https://github.com/Ellinston/Ellinston.github.io/commits/main/data/portfolio.json"
+        }
+      ]
+    },
+    {
+      "id": "gm6020",
+      "title": "GM6020 云台电机控制",
+      "status": "持续迭代",
+      "period": "2026.07 — NOW",
+      "summary": "从 CAN 通信、反馈解析和 VOFA 观测起步，完成单轴速度 PI 与位置外环实测；双轴模块已通过主机测试和 ARM GCC 编译，实机联调仍在推进。",
+      "tags": [
+        "STM32",
+        "CAN",
+        "PID",
+        "RoboMaster"
+      ],
+      "links": [
+        {
+          "label": "源码",
+          "url": "https://github.com/Ellinston/GM6020"
+        }
+      ]
+    },
+    {
+      "id": "codex-workbench",
+      "title": "Codex Taskboard × Dream Skin 工作台",
+      "status": "待回归",
+      "period": "2026.08 — NOW",
+      "summary": "把任务看板、Codex 会话与视觉主题收敛到一个可重复启动的 Windows 工作入口；已验证关闭窗口后的统一恢复链路，登录自启壁纸仍待真实重启回归。",
+      "tags": [
+        "Codex",
+        "Windows",
+        "Automation",
+        "Electron"
+      ],
+      "links": [
+        {
+          "label": "公开档案历史",
+          "url": "https://github.com/Ellinston/Ellinston.github.io/commits/main/data/portfolio.json"
+        }
+      ]
+    },
+    {
+      "id": "mao-reader",
+      "title": "每日毛选：从网页原型到 Obsidian",
+      "status": "原型",
+      "period": "2026.08",
+      "summary": "在桌面阅读器原型之后重新评估入口，把每日文章、AI 排版与用户笔记迁移到 Obsidian；同步脚本只替换生成区并保留手写内容。",
+      "tags": [
+        "Obsidian",
+        "Reading",
+        "Automation",
+        "UX"
+      ],
+      "links": [
+        {
+          "label": "公开档案历史",
+          "url": "https://github.com/Ellinston/Ellinston.github.io/commits/main/data/portfolio.json"
+        }
+      ]
+    },
+    {
+      "id": "astrbot",
+      "title": "AstrBot 校园 QQ 助手",
+      "status": "实验中",
+      "period": "2026.08",
+      "summary": "完成 AstrBot、NapCat 与 OneBot 的本地链路，并迁移到个人 ECS；建立校园问答与机器人介绍 Skills。长期运行稳定性仍在观察。",
+      "tags": [
+        "AstrBot",
+        "QQ Bot",
+        "Skill",
+        "ECS"
+      ],
+      "links": [
+        {
+          "label": "公开档案历史",
+          "url": "https://github.com/Ellinston/Ellinston.github.io/commits/main/data/portfolio.json"
+        }
+      ]
+    },
+    {
+      "id": "public-archive",
+      "title": "公开成长档案",
+      "status": "原型",
+      "period": "2026.09 — NOW",
+      "summary": "完成第一版视觉页面与 Agent Kit 单向发布链；用户认可界面，但长期框架仍需从“让外部人真正看见可核查的成长与作为”这一目标重新讨论。",
+      "tags": [
+        "GitHub Pages",
+        "Portfolio",
+        "Audit",
+        "Automation"
+      ],
+      "links": [
+        {
+          "label": "本站源码",
+          "url": "https://github.com/Ellinston/Ellinston.github.io"
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "date": "2026-09-04",
+      "title": "建立一套事实源、两个发布视图",
+      "description": "github.io 改为 Agent Kit 公开白名单的自动镜像；项目代码、完整上下文与公开索引各自承担不同职责。",
+      "evidence": "https://github.com/Ellinston/Ellinston.github.io"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "修复 Dream Skin 登录自启链路",
+      "description": "补上登录后的延迟接管、复查重试与日志；脚本级验证完成，真实注销或重启场景仍明确标为待回归。",
+      "evidence": "https://github.com/Ellinston/Ellinston.github.io/commits/main/data/portfolio.json"
+    },
+    {
+      "date": "2026-08-30",
+      "title": "统一恢复 Codex 工作台",
+      "description": "统一 Taskboard、Dream Skin 与独立 Codex 实例的启动入口，验证关闭窗口后可由常驻启动器恢复。",
+      "evidence": "https://github.com/Ellinston/Ellinston.github.io/commits/main/data/portfolio.json"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "Agent Kit Console v0.3 完成验证",
+      "description": "关系图、真实文件结构、运行记录与桌面/窄屏布局通过本地检查，项目知识不再只是一组散落的 Markdown。",
+      "evidence": "https://github.com/Ellinston/Ellinston.github.io/commits/main/data/portfolio.json"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "双 GM6020 软件闭环形成",
+      "description": "双轴控制核心完成主机单元测试，9 个编译单元通过 ARM GCC 与 -Werror；烧录和双电机实机联调尚未完成。",
+      "evidence": "https://github.com/Ellinston/GM6020"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "每日阅读入口转向 Obsidian",
+      "description": "同步脚本实现 dry-run、备份和生成区保护，把每日内容送到既有知识库，同时保留用户笔记区。",
+      "evidence": "https://github.com/Ellinston/Ellinston.github.io/commits/main/data/portfolio.json"
+    }
+  ],
+  "notes": [
+    {
+      "title": "编译通过、烧录成功、实机验证必须分开写",
+      "summary": "尤其在嵌入式与硬件项目中，不用一个“完成”掩盖不同证据等级。"
+    },
+    {
+      "title": "AI 记忆应该是路由系统，而不是聊天摘要仓库",
+      "summary": "稳定背景、当前进度与工作流分层保存，再由项目入口按任务读取。"
+    },
+    {
+      "title": "纸笔可以保持低摩擦，数字系统负责日后检索",
+      "summary": "先以主题 PDF 和最低限度元数据归档，期末再让 AI 建立跨笔记索引。"
+    },
+    {
+      "title": "当入口成本过高时，重做入口比装饰原产品更重要",
+      "summary": "每日毛选从网页转向 Obsidian，是一次基于真实使用摩擦做出的路线修正。"
+    }
+  ]
+}

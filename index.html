@@ -1,11 +1,92 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Ston's Homepage</title>
-</head>
-<body>
-  <h1>Hello, I'm Ston.</h1>
-  <p>This is my personal growth archive.</p>
-</body>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="冯晨曦的长期公开成长档案：项目阶段、学习方法与可追溯的工程记录。" />
+    <meta name="theme-color" content="#f2f0e9" />
+    <title>Ellinston · 公开成长档案</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">E</span><span>ELLINSTON / AUDIT LOG</span></a>
+      <nav aria-label="主要导航"><a href="#projects">项目</a><a href="#timeline">时间线</a><a href="#notes">学习记录</a><a href="#method">维护方式</a></nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-kicker"><span class="live-dot" aria-hidden="true"></span><span id="archive-status">公开档案 · 持续更新</span></div>
+        <h1>让成长留下<br /><em>可检查的证据。</em></h1>
+        <div class="hero-bottom">
+          <p class="hero-intro" id="profile-intro">我是冯晨曦，一名学习自动化与机器人方向的工科学生。这里不记录每日流水账，只在项目形成阶段性成果后，留下时间、判断、结果和可追溯的来源。</p>
+          <div class="hero-loop" aria-label="成长档案工作流"><span>01 / 做项目</span><span>02 / 留提交</span><span>03 / 阶段复盘</span><span>04 / 公开索引</span></div>
+        </div>
+        <div class="hero-index" aria-hidden="true">ARCHIVE<br />NO. 001</div>
+      </section>
+
+      <section class="principles ruled-section" aria-labelledby="principles-title">
+        <div class="section-label">00 / PRINCIPLE</div>
+        <div class="section-content">
+          <h2 id="principles-title">这不是作品橱窗，<br />而是一份证据索引。</h2>
+          <div class="principle-grid">
+            <article><span>真实历史</span><p>开发过程留在各自仓库的 commit 中，主页不重写一份更漂亮的故事。</p></article>
+            <article><span>阶段发布</span><p>只有完成可说明、可验证的阶段，才进入公开时间线。</p></article>
+            <article><span>明确边界</span><p>已验证、仍在实验和待实机回归的结果，使用不同状态表达。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="ledger-strip" aria-label="档案统计" id="stats-list">
+        <div><strong>—</strong><span>公开项目</span></div><div><strong>—</strong><span>阶段节点</span></div><div><strong>2026</strong><span>档案起点</span></div><div><strong>1</strong><span>唯一事实源</span></div>
+      </section>
+
+      <section class="projects ruled-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-label">01 / PROJECTS</div>
+        <div class="section-content">
+          <div class="section-heading-row"><h2 id="projects-title">阶段成果</h2><p>代码分散在各自仓库；这里负责建立方向、阶段与证据之间的索引。</p></div>
+          <div class="project-list" id="project-list" aria-live="polite"><p class="loading-state">正在读取公开档案…</p></div>
+        </div>
+      </section>
+
+      <section class="timeline ruled-section" id="timeline" aria-labelledby="timeline-title">
+        <div class="section-label">02 / TIMELINE</div>
+        <div class="section-content">
+          <div class="section-heading-row"><h2 id="timeline-title">成长时间线</h2><p>日期对应阶段性判断或可验证结果，而不是“今天做了什么”。</p></div>
+          <ol class="timeline-list" id="timeline-list" aria-live="polite"></ol>
+        </div>
+      </section>
+
+      <section class="notes ruled-section" id="notes" aria-labelledby="notes-title">
+        <div class="section-label">03 / NOTES</div>
+        <div class="section-content">
+          <div class="section-heading-row"><h2 id="notes-title">正在形成的方法</h2><p>不是教程仓库，而是从真实项目中长出来、以后还能复用的判断。</p></div>
+          <div class="notes-grid" id="notes-list"></div>
+        </div>
+      </section>
+
+      <section class="method ruled-section" id="method" aria-labelledby="method-title">
+        <div class="section-label">04 / SYSTEM</div>
+        <div class="section-content method-layout">
+          <div><p class="eyebrow">ONE SOURCE, TWO VIEWS</p><h2 id="method-title">只维护 Agent Kit，<br />网站自动成为公开视图。</h2></div>
+          <div class="method-flow" aria-label="同步流程">
+            <article><span>完整事实</span><strong>私有 Agent Kit / PROJECT</strong><p>项目背景、内部进度、限制和下一步。可以详细，但不自动公开。</p></article>
+            <div class="flow-arrow" aria-hidden="true">↓ 公开白名单</div>
+            <article class="accent-card"><span>可发布摘要</span><strong>私有 Agent Kit / PUBLIC</strong><p>阶段成果、公开链接和状态；只有这里的内容允许进入主页。</p></article>
+            <div class="flow-arrow" aria-hidden="true">↓ 自动镜像</div>
+            <article><span>公开索引</span><strong>Ellinston.github.io</strong><p>由私有仓库 Action 主动发布，保留独立提交记录，无需手工复制页面。</p></article>
+          </div>
+          <aside class="audit-note"><span>审计约定</span><p>项目仓库证明“过程发生过”，Agent Kit 解释“我如何判断”，主页负责“让人找到它们”。三者职责不同，但不需要三处重复书写。</p></aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div><span>ELLINSTON / PUBLIC GROWTH ARCHIVE</span><span id="last-updated">数据更新时间：读取中</span></div>
+      <div class="footer-links"><a href="https://github.com/Ellinston" rel="me">GitHub ↗</a><a href="https://github.com/Ellinston/Ellinston.github.io/blob/main/data/portfolio.json">公开数据 ↗</a><a href="https://github.com/Ellinston/Ellinston.github.io">本站源码 ↗</a></div>
+    </footer>
+    <noscript><div class="noscript-note">请启用 JavaScript 以读取项目档案；所有原始记录仍可在 Agent Kit 中查看。</div></noscript>
+  </body>
 </html>
